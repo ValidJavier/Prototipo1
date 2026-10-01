@@ -20,6 +20,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".DetalleActivity" android:exported="false"/>
+        <activity android:name=".ConfigActivity" android:exported="false" />
+        <activity android:name=".FormActivity" android:exported="false" />
+        <activity android:name=".ConfirmActivity" android:exported="false" />
+
+
     </application>
 
 </manifest>
