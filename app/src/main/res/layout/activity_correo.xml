@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fondo"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_primario"
+        app:navigationIconTint="@color/white"
+        app:titleTextColor="@color/white" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="2dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                style="@style/TituloSeccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Redacta tu correo" />
+
+            <ImageView
+                android:id="@+id/imgCorreo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="Correo electrónico"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gmail" />
+
+            <EditText
+                android:id="@+id/etCorreo"
+                style="@style/CampoTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Correo destino"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etAsunto"
+                style="@style/CampoTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Asunto"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etMensaje"
+                style="@style/CampoTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:hint="Mensaje"
+                android:inputType="textMultiLine"
+                android:minLines="4" />
+
+            <Button
+                android:id="@+id/btnEnviarCorreo"
+                style="@style/BotonPrincipal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:text="Enviar correo" />
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
