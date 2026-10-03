@@ -294,15 +294,17 @@ Cuando una aplicación externa no está disponible, se controla `ActivityNotFoun
 
 ### Intents implícitos
 
-
+[Intent Implicito1](screenshots/intent_implicito.jpeg)
+[Intent Implicito2](screenshots/intent_implicito_2.jpeg)
 
 ### Catálogo y detalle
 
-
+[Intent Explicito](screenshots/explicito.jpeg)
 
 ### Formulario y confirmación
 
-
+[Intent Explicito/Formulario](screenshots/formulario.jpeg)
+[Intent Explicito/Formulario](screenshots/confirmado.jpeg)
 
 ## 7. Generación del APK Debug
 
