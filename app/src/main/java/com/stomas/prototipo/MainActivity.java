@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         irA(R.id.btnCamara, CamaraActivity.class);
 
         // ---------- Menú de intents explícitos ----------
-        abrirDetalle(R.id.btnItem1, "Notebook Pro", "Notebook de 16 GB RAM y 512 GB SSD", 799990);
-        abrirDetalle(R.id.btnItem2, "Smartphone X", "Smartphone con cámara de 50 MP", 449990);
-        abrirDetalle(R.id.btnItem3, "Tablet Air", "Tablet de 11 pulgadas ideal para estudiar", 329990);
+        abrirDetalle(R.id.btnItem1, "Notebook Pro", "Notebook de 16 GB RAM y 512 GB SSD", 799990, R.drawable.notebook);
+        abrirDetalle(R.id.btnItem2, "Smartphone X", "Smartphone con cámara de 50 MP", 449990, R.drawable.smartphone);
+        abrirDetalle(R.id.btnItem3, "Tablet Air", "Tablet de 11 pulgadas ideal para estudiar", 329990, R.drawable.tablet);
         irA(R.id.btnForm, FormActivity.class);
         irA(R.id.btnConfig, ConfigActivity.class);
     }
@@ -41,12 +41,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Explícito #1: MainActivity -> DetalleActivity con extras
-    private void abrirDetalle(int idBoton, String nombre, String descripcion, int precio) {
+    private void abrirDetalle(int idBoton, String nombre, String descripcion, int precio, int imagen) {
         findViewById(idBoton).setOnClickListener(v -> {
             Intent i = new Intent(this, DetalleActivity.class);
             i.putExtra(DetalleActivity.EXTRA_NOMBRE, nombre);
             i.putExtra(DetalleActivity.EXTRA_DESCRIPCION, descripcion);
             i.putExtra(DetalleActivity.EXTRA_PRECIO, precio);
+            i.putExtra(DetalleActivity.EXTRA_IMAGEN, imagen);
             startActivity(i);
         });
     }

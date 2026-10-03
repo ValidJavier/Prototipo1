@@ -30,11 +30,22 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+
             <TextView
                 style="@style/TituloSeccion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Redacta tu correo" />
+
+            <ImageView
+                android:id="@+id/imgCorreo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="Correo electrónico"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gmail" />
 
             <EditText
                 android:id="@+id/etCorreo"
@@ -72,6 +83,8 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="16dp"
                 android:text="Enviar correo" />
+
+
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

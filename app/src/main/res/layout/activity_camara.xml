@@ -30,6 +30,16 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+            <ImageView
+                android:id="@+id/imgCamara"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="Camara"
+                android:scaleType="fitCenter"
+                android:src="@drawable/camara" />
+
             <Button
                 android:id="@+id/btnTomarFoto"
                 style="@style/BotonPrincipal"

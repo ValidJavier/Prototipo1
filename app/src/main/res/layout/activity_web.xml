@@ -36,6 +36,16 @@
                 android:layout_height="wrap_content"
                 android:text="Abre una página web" />
 
+            <ImageView
+                android:id="@+id/imgWeb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="Página web"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pagina_web" />
+
             <EditText
                 android:id="@+id/etUrl"
                 style="@style/CampoTexto"

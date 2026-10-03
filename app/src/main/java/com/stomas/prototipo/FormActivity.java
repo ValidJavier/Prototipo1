@@ -66,8 +66,8 @@ public class FormActivity extends AppCompatActivity {
             etEdad.setError("Ingresa un número");
             return;
         }
-        if (edad < 1 || edad > 120) {
-            etEdad.setError("La edad debe estar entre 1 y 120");
+        if (edad < 1 || edad > 99) {
+            etEdad.setError("La edad debe estar entre 1 y 99");
             return;
         }
 
