@@ -287,7 +287,7 @@ Cuando una aplicación externa no está disponible, se controla `ActivityNotFoun
 
 ### Menú principal
 
-![Pantalla principal](screenshots/pantalla_principal.jepg)
+![Pantalla principal](screenshots/pantalla_principal.jpeg)
 
 
 
